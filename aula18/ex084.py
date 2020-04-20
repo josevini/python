@@ -8,3 +8,4 @@ while True:
         break
 print('-=' * 30)
 print(f'Ao todo, você cadastrou {count} pessoas.')
+print('Falta acabar...')
