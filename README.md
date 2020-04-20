@@ -1,2 +1,2 @@
-# python
- Meu repositório com o curso de Python do curso em vídeo
+# Python
+ Meu repositório com o curso de **[Python*](https://www.youtube.com/playlist?list=PLHz_AreHm4dlKP6QQCekuIPky1CiwmdI6)* do **[Curso em Vídeo](https://www.youtube.com/user/cursosemvideo)**
