@@ -25,7 +25,7 @@ print(f'Ao todo, você cadastrou {count} pessoas.')
 print(f'O maior peso foi {maior:.2f}Kg. Peso de ', end='')
 for pos, pessoa in enumerate(pessoas):
     if pessoa[1] == maior:
-        print(f'[{pessoa[0]}]',  end=' ')
+        print(f'[{pessoa[0]}]', end=' ')
 print(f'\nO menor peso foi {menor:.2f}Kg. Peso de ', end='')
 for pessoa in pessoas:
     if pessoa[1] == menor:
