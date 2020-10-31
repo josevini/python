@@ -5,7 +5,7 @@ while True:
     num = str(input('Digite um valor na base 2: '))
     if isBinary(num):
         res = toBinary(num)
-        print(f'Binário: {int(res)}')
+        print(f'Decimal: {int(res)}')
     else:
         print('ERRO')
     res = str(input('Quer sair? [S/N] ')).lower()
