@@ -1,6 +1,6 @@
 # Exercício 5.19 - Livro
 
-valor = int(input('Valor para saque: '))
+valor = float(input('Valor para saque: '))
 ced = 0
 ced_atual = 100
 saque = valor
@@ -10,7 +10,7 @@ while True:
         ced += 1
     else:
         if ced != 0:
-            print(f'{ced} cédulas de R${ced_atual}')
+            print(f'{ced} cédulas de R${ced_atual:.2f}')
         if saque == 0:
             break
         if ced_atual == 100:
