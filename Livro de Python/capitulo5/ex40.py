@@ -7,7 +7,7 @@ else:
     cont = 1
     div = 0
     print(f'O valor {n} é divisível por ', end='')
-    while cont <= 20:
+    while cont <= n:
         if n % cont == 0:
             print(cont, end=' ')
             div += 1
