@@ -6,11 +6,13 @@ if n == 0 or n == 1:
 else:
     cont = 1
     div = 0
-    while cont <= 5:
+    print(f'O valor {n} é divisível por ', end='')
+    while cont <= 20:
         if n % cont == 0:
+            print(cont, end=' ')
             div += 1
         cont += 1
     if div > 2:
-        print(f'{n} não é primo')
+        print(f' portanto, não é primo')
     else:
-        print(f'{n} é primo')
+        print(f' portanto, é primo')
