@@ -1,3 +1,4 @@
+# Exercício 5.24 - Livro
 qtd = int(input('Quantos números primos você deseja ver? '))
 
 num = 1
