@@ -1,4 +1,4 @@
-# Exercício 6.2 - Livro
+# Exercício 6.3 - Livro
 
 l1 = []
 l2 = []
@@ -8,11 +8,13 @@ while True:
     if num == 0:
         l3.extend(l1)
         break
-    l1.append(num)
+    if num not in l1:
+        l1.append(num)
 while True:
     num = int(input('Informe um valor para a segunda lista (0 para parar): '))
     if num == 0:
         l3.extend(l2)
         break
-    l2.append(num)
+    if num not in l2:
+        l2.append(num)
 print('Terceira lista: ', l3)
