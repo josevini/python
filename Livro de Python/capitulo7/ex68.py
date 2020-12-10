@@ -1,3 +1,4 @@
+# Exercício 7.7 - Livro
 palavra = str(input('Digite a palavra secreta: ')).lower().strip()
 for x in range(100):
     print()
