@@ -1,2 +1,0 @@
-Olá, Pessoal! Sinto muito,
-mas Python é melhor que Java!
