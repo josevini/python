@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="569cb7c8-ac76-4960-8310-6255cf21d14b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Introdução à Programação/capitulo9/ex_9-5.py" afterDir="false" />
-    </list>
+    <list default="true" id="569cb7c8-ac76-4960-8310-6255cf21d14b" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,5 +49,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
