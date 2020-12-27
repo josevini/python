@@ -9,7 +9,7 @@ else:
     arq1 = args[1]
     arq2 = args[2]
     try:
-        with open('file3.txt', 'w', encoding='UTF-8') as f3, open(arq1, 'r', encoding='UTF-8') as f1, open(arq2, 'r', encoding='UTF-8') as f2:
+        with open('txt/file3.txt', 'w', encoding='UTF-8') as f3, open(arq1, 'r', encoding='UTF-8') as f1, open(arq2, 'r', encoding='UTF-8') as f2:
             txt1 = f1.read()
             txt2 = f2.read()
             f3.write(str(txt1))
