@@ -1,0 +1,8 @@
+;Esta linha não deve ser impressa.
+>Esta linha deve ser impressa alinhada a direita.
+<Esta linha deve ser impressa alinhada a esquerda.
+*Esta linha deve ser impressa centralizada.
+=Imprima o caracter 40 vezes
+linhas normais
+linhas normais
+linhas normais
