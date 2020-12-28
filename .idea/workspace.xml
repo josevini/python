@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="569cb7c8-ac76-4960-8310-6255cf21d14b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Introdução à Programação/capitulo9/txt/arquivos_pagina.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Introdução à Programação/capitulo9/ambiente.py" beforeDir="false" afterPath="$PROJECT_DIR$/Introdução à Programação/capitulo9/ambiente.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +39,7 @@
       <recent name="C:\Users\ferre\OneDrive\Documentos\GitHub\python\Introdução à Programação\capitulo9\txt" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.exercicio-9-7">
+  <component name="RunManager" selected="Python.ambiente">
     <configuration name="ambiente" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -147,8 +147,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.exercicio-9-7" />
         <item itemvalue="Python.ambiente" />
+        <item itemvalue="Python.exercicio-9-7" />
         <item itemvalue="Python.ex_9-6" />
         <item itemvalue="Python.ex_9-5" />
         <item itemvalue="Python.exercicio-9-6" />
