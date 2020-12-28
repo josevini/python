@@ -3,6 +3,7 @@
 <Esta linha deve ser impressa alinhada a esquerda.
 *Esta linha deve ser impressa centralizada.
 =Imprima o caracter 40 vezes
+.Pergunta se quer continuar
 linhas normais
 linhas normais
 linhas normais
