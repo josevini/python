@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="569cb7c8-ac76-4960-8310-6255cf21d14b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Introdução à Programação/capitulo9/ex_9-13.py" beforeDir="false" afterPath="$PROJECT_DIR$/Introdução à Programação/capitulo9/ex_9-13.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Introdução à Programação/capitulo9/ex_9-14.py" beforeDir="false" afterPath="$PROJECT_DIR$/Introdução à Programação/capitulo9/ex_9-14.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Introdução à Programação/capitulo9/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Introdução à Programação/capitulo9/functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Introdução à Programação/capitulo9/txt/file3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Introdução à Programação/capitulo9/txt/file3.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +46,7 @@
       <recent name="C:\Users\ferre\OneDrive\Documentos\GitHub\python\Introdução à Programação\capitulo9\txt" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ex_9-13">
+  <component name="RunManager" selected="Python.ambiente">
     <configuration name="ambiente" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -149,9 +154,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ambiente" />
         <item itemvalue="Python.ex_9-13" />
         <item itemvalue="Python.ex_9-12" />
-        <item itemvalue="Python.ambiente" />
         <item itemvalue="Python.ex_9-11" />
         <item itemvalue="Python.exercicio-9-10" />
       </list>
