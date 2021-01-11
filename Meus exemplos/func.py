@@ -6,7 +6,7 @@ def isBinary(n):
             res = False
     return res
 
-def toBinary(num):
+def toDecimal(num):
     pot = len(num) - 1
     soma = 0
     for pos in range(0, len(num)):
