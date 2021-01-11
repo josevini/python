@@ -1,10 +1,10 @@
-from func import isBinary, toBinary
+from func import isBinary, toDecimal
 sair = 'n'
 print('=-=' * 10)
 while True:
     num = str(input('Digite um valor na base 2: '))
     if isBinary(num):
-        res = toBinary(num)
+        res = toDecimal(num)
         print(f'Decimal: {int(res)}')
     else:
         print('ERRO')
