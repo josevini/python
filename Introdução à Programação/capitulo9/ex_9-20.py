@@ -75,6 +75,21 @@ def lê():
             nome, telefone = l.strip().split('#')
             agenda.append([nome, telefone])
 
+def ordena():
+    fim = len(agenda)
+    while True:
+        i = 0
+        trocou = False
+        while i < (fim - 1):
+            if agenda[i] > agenda[i + 1]:
+                temp = agenda[i + 1]
+                agenda[i + 1] = agenda[i]
+                agenda[i] = temp
+                trocou = True
+            i += 1
+        if not trocou:
+            break
+
 def grava():
     nomeArquivo = pedeNomeArquivo()
     with open(nomeArquivo, 'w', encoding='utf-8') as arquivo:
@@ -101,8 +116,9 @@ def menu():
 4 - Lista
 5 - Grava
 6 - Lê
+7 - Ordena
 0 - Sai""")
-    return validaFaixaInteiro('Escolha uma opção: ', 0, 6)
+    return validaFaixaInteiro('Escolha uma opção: ', 0, 7)
 
 while True:
     print(agenda)
@@ -121,4 +137,6 @@ while True:
         grava()
     elif opcao == 6:
         lê()
+    elif opcao == 7:
+        ordena()
 menu()
