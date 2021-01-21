@@ -121,7 +121,6 @@ def menu():
     return validaFaixaInteiro('Escolha uma opção: ', 0, 7)
 
 while True:
-    print(agenda)
     opcao = menu()
     if opcao == 0:
         break
