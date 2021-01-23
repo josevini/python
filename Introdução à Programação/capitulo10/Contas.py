@@ -24,5 +24,3 @@ class Conta:
         for o in self.operacoes:
             print(f'{o[0]:10s} {o[1]:5.2f}')
         print('-' * 20)
-
-
