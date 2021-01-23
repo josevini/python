@@ -1,5 +1,10 @@
 # Exercício 10.6 - Livro
 
+class Cliente:
+    def __init__(self, nome, telefone):
+        self.nome = nome
+        self.telefone = telefone
+
 class Conta:
     def __init__(self, clientes, numero, saldo=0):
         self.saldo = 0
