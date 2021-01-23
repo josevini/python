@@ -2,10 +2,13 @@ from Clientes import Cliente
 from Contas import Conta
 
 vinicius = Cliente('Vinicius', '9640-2432')
-print(f'Nome: {vinicius.nome} | Telefone: {vinicius.telefone}')
-
 niara = Cliente('Niara', '8539-1321')
-print(f'Nome: {niara.nome} | Telefone: {niara.telefone}')
+clientes = [vinicius, niara]
 
 minhaConta = Conta(vinicius, '2305', 600)
-minhaConta.resumo()
+nossaConta = Conta(clientes, '0709', 1200)
+
+minhaConta.deposito(6400)
+minhaConta.saque(2000)
+
+minhaConta.extrato()
