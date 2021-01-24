@@ -1,7 +1,7 @@
 # Exercício 10.3 - Livro
 
 class Televisao:
-    def __init__(self, min=1, max=5):
+    def __init__(self, min, max):
         self.ligada = False
         self.canal = min
         self.minimo = min
