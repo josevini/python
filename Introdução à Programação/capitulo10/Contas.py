@@ -6,16 +6,22 @@ class Conta:
         self.operacoes = []
         self.deposito(saldo)
     def resumo(self):
+        print('--' * 16)
+        print(f'Dono(s) da conta: ', end='')
+        try:
+            for cliente in self.clientes:
+                print(cliente.nome, end=' ')
+            print('')
+        except TypeError:
+            print(self.clientes.nome)
         print(f'CC Número: {self.numero} Saldo: {self.saldo:.2f}')
     def saque(self, valor):
         if self.saldo >= valor:
-            print('Fazendo saque!')
             self.saldo -= valor
             self.operacoes.append(['SAQUE', valor])
         else:
             print('Saldo insuficiente!')
     def deposito(self, valor):
-        print('Fazendo depósito!')
         self.saldo += valor
         self.operacoes.append(['DEPÓSITO', valor])
     def extrato(self):
