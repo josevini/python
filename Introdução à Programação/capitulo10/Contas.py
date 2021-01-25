@@ -19,8 +19,9 @@ class Conta:
         if self.saldo >= valor:
             self.saldo -= valor
             self.operacoes.append(['SAQUE', valor])
+            return True
         else:
-            print('Saldo insuficiente!')
+            return False
     def deposito(self, valor):
         self.saldo += valor
         self.operacoes.append(['DEPÓSITO', valor])
@@ -30,3 +31,15 @@ class Conta:
         for o in self.operacoes:
             print(f'{o[0]:10s} {o[1]:5.2f}')
         print('-' * 20)
+
+class ContaEspecial(Conta):
+    def __init__(self, clientes, numero, saldo=0, limite=0):
+        Conta.__init__(self, clientes, numero, saldo)
+        self.limite = limite
+    def saque(self, valor):
+        if self.saldo + self.limite >= valor:
+            self.saldo -= valor
+            self.operacoes.append(['SAQUE', valor])
+            return True
+        else:
+            return False
