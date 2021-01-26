@@ -6,3 +6,11 @@ class Nome:
         self.chave = nome.strip().lower()
     def __str__(self):
         return self.nome
+    def __repr__(self):
+        return f'<Classe {type(self).__name__} em 0x{id(self):x} em nome: {self.nome} chave: {self.chave}>'
+    def __eq__(self, outro):
+        print('__eq__ chamado')
+        return self.nome == outro.nome
+    def __lt__(self, outro):
+        print('__lt__ chamado')
+        return self.nome < outro.nome
