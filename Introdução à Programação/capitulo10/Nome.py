@@ -23,6 +23,9 @@ class Nome:
             raise TypeError('Nome não pode ser nulo ou em branco.')
         self.__nome = valor
         self.__chave = Nome.criaChave(valor)
+    @property
+    def chave(self):
+        return self.__chave
     @staticmethod
     def criaChave(nome):
         return nome.strip().lower()
