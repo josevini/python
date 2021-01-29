@@ -9,3 +9,11 @@ class Telefone:
             tipo = ''
     def __eq__(self, other):
         return self.numero == other.numero and ((self.tipo == other.tipo) or (self.tipo is None or other.tipo is None))
+    @property
+    def numero(self):
+        return self.__numero
+    @numero.setter
+    def numero(self, valor):
+        if valor is None or not valor.strip():
+            raise ValueError('Número não pode ser None ou em branco')
+        self.__numero = valor
