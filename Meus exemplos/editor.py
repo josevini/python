@@ -22,7 +22,10 @@ def pergunta(msg=''):
     resp = input(msg).lower()[0]
     if resp == 's':
         return True
-    return False
+    elif resp == 'n':
+        return False
+    else:
+        print('Opção inválida!')
 
 def entrada(msg=''):
     while True:
@@ -40,8 +43,19 @@ def intervalo(valor, min, max):
 def criarArquivo():
     nome, ext = os.path.splitext(entradaTexto('Informe o nome do arquivo: '))
     filename = (nome + ext) if ext else (nome + '.txt')
-    atrasar(f'Criando arquivo {filename}...', 1.5)
-    file = open(filename, 'w', encoding='utf-8')
+    atrasar('Processando...', 1.3)
+    if os.path.exists(filename):
+        resp = pergunta('Arquivo encontrado! Quer sobrescrever? [s/n]: ')
+        if resp:
+            atrasar(f'Criando arquivo {filename}...', 1.5)
+            file = open(filename, 'w', encoding='utf-8')
+            atrasar(f'Arquivo {filename} criado!', 1.3)
+        else:
+            atrasar('Nenhum arquivo foi criado!', 1.3)
+    else:
+        atrasar(f'Criando arquivo {filename}...', 1.5)
+        file = open(filename, 'w', encoding='utf-8')
+        atrasar(f'Arquivo {filename} criado!', 1.3)
 
 def criarPasta():
     while True:
@@ -49,10 +63,10 @@ def criarPasta():
         atrasar(f'Criando a pasta {dirname}...', 1.5)
         try:
             os.mkdir(dirname)
-            atrasar(f'Pasta {dirname} criada!')
+            atrasar(f'Pasta {dirname} criada!', 1.3)
             break
         except FileExistsError as erro:
-            atrasar('Ops! Pasta encontrada, tente outro nome!')
+            atrasar('Ops! Pasta encontrada, tente outro nome!', 1.3)
             desenha('-', 42)
 
 def criar():
@@ -65,25 +79,24 @@ def criar():
         desenha('-', 42)
         op = intervalo(entrada('Escolha uma opção: '), 0, 2)
         if op == 0:
-            print('Cancelado...')
-            time.sleep(1.3)
+            atrasar('Cancelando...', 1.3)
             break
         elif op == 1:
             criarArquivo()
         elif op == 2:
             criarPasta()
-
-while True:
-    mensagem('MENU PRINCIPAL')
-    print("""1 - Criar
+def menu():
+    while True:
+        mensagem('MENU PRINCIPAL')
+        print("""1 - Criar
 2 - Apagar
 3 - Acessar
 4 - Editar
 0 - Sair""")
-    desenha('-', 42)
-    op = intervalo(entrada('Escolha uma opção: '), 0, 4)
-    if op == 0:
-        break
-    elif op == 1:
-        criar()
+        desenha('-', 42)
+        op = intervalo(entrada('Escolha uma opção: '), 0, 4)
+        if op == 0:
+            break
+        elif op == 1:
+            criar()
 
