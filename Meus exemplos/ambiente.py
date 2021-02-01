@@ -1,5 +1,6 @@
 import os
 import os.path
+import time
 
 def desenha(simb='', qtd=0):
     print(simb * qtd)
@@ -26,29 +27,38 @@ def entrada(msg=''):
             return int(valor)
         except Exception as erro:
             print('Digite um número válido!')
+
 def intervalo(valor, min, max):
     if min <= valor <= max:
         return valor
     print(f'Digite um valor entre {min} e {max}')
 
+def criarArquivo():
+    nome, ext = os.path.splitext(entradaTexto('Informe o nome do arquivo: '))
+    filename = (nome + ext) if ext else (nome + '.txt')
+    file = open(filename, 'w', encoding='utf-8')
+
+def criarPasta():
+    dirname = entradaTexto('Informe o nome da pasta: ')
+    os.mkdir(dirname)
+
 def criar():
-    desenha('-', 42)
-    print("""Deseja criar um arquivo ou uma pasta?
+    while True:
+        desenha('-', 42)
+        print("""Deseja criar um arquivo ou uma pasta?
 1 - Arquivo
 2 - Pasta
 0 - Cancelar""")
-    desenha('-', 42)
-    op = intervalo(entrada('Escolha uma opção: '), 0, 2)
-    if op == 0:
-        print('Cancelado...')
-    elif op == 1:
-        filename = entradaTexto('Informe o nome do arquivo: ')
-        grava = pergunta('Habilitar edição de arquivo? [s/n]: ')
-        nome, ext = os.path.splitext(filename)
-        file = open((nome+ext) if ext else (nome+'.txt'), 'w' if grava else 'r', encoding='utf-8')
-    elif op == 2:
-        dirname = entradaTexto('Informe o nome da pasta: ')
-
+        desenha('-', 42)
+        op = intervalo(entrada('Escolha uma opção: '), 0, 2)
+        if op == 0:
+            print('Cancelado...')
+            time.sleep(1.3)
+            break
+        elif op == 1:
+            criarArquivo()
+        elif op == 2:
+            criarPasta()
 
 while True:
     mensagem('MENU PRINCIPAL')
