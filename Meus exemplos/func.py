@@ -15,7 +15,7 @@ def toDecimal(num):
     res = soma
     return res
 
-def organiza(lista=[]):
+def organiza(lista):
     cont = 0
     nova_lista = []
     for valor in lista:
