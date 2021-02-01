@@ -1,5 +1,6 @@
 import listaUnica
 import Nome
+import tipoTelefone
 
 class Telefone:
     def __init__(self, num, tipo=None):
@@ -44,3 +45,9 @@ class DadoAgenda:
             return None
         else:
             return self.telefones[posicao]
+
+class tiposTelefones(listaUnica):
+    def __init__(self):
+        super().__init__(tipoTelefone)
+
+
