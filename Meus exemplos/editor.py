@@ -2,6 +2,10 @@ import os
 import os.path
 import time
 
+def atrasar(msg='', seg=1.0):
+    print(msg)
+    time.sleep(seg)
+
 def desenha(simb='', qtd=0):
     print(simb * qtd)
 
@@ -36,11 +40,20 @@ def intervalo(valor, min, max):
 def criarArquivo():
     nome, ext = os.path.splitext(entradaTexto('Informe o nome do arquivo: '))
     filename = (nome + ext) if ext else (nome + '.txt')
+    atrasar(f'Criando arquivo {filename}...', 1.5)
     file = open(filename, 'w', encoding='utf-8')
 
 def criarPasta():
-    dirname = entradaTexto('Informe o nome da pasta: ')
-    os.mkdir(dirname)
+    while True:
+        dirname = entradaTexto('Informe o nome da pasta: ')
+        atrasar(f'Criando a pasta {dirname}...', 1.5)
+        try:
+            os.mkdir(dirname)
+            atrasar(f'Pasta {dirname} criada!')
+            break
+        except FileExistsError as erro:
+            atrasar('Ops! Pasta encontrada, tente outro nome!')
+            desenha('-', 42)
 
 def criar():
     while True:
