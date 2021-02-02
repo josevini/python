@@ -1,3 +1,0 @@
-import editor
-
-editor.menu()
