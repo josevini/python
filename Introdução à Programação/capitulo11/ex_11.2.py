@@ -1,3 +1,4 @@
+# Exercício 11.2 - Livro
 
 import sqlite3
 from contextlib import closing
