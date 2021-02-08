@@ -3,8 +3,8 @@
 import sqlite3
 from contextlib import closing
 
+prod = str(input('Informe o nome do produto: '))
 with sqlite3.connect('db/preco.db') as connection:
     with closing(connection.cursor()) as cursor:
-        result = cursor.execute('select * from produto').fetchall()
-        for reg in result:
-            print(f'{reg[1]} {reg[2]}')
+        result = cursor.execute('select * from produto where nome = ?', (prod,)).fetchone()
+        print(result)
