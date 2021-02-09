@@ -8,3 +8,8 @@ max = float(input('Digite o preço máximo: '))
 with sqlite3.connect('db/preco.db') as connection:
     with closing(connection.cursor()) as cursor:
         result = cursor.execute(f'select * from produto where preco >= {min} and preco <= {max}').fetchall()
+        if result:
+            for line in result:
+                print(line)
+        else:
+            print('Nenhum produto encontrado!')
