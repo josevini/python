@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="569cb7c8-ac76-4960-8310-6255cf21d14b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Introdução à Programação/capitulo11/ex_11.3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Introdução à Programação/capitulo11/ex_11.4.py" beforeDir="false" afterPath="$PROJECT_DIR$/Introdução à Programação/capitulo11/ex_11.4.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,6 +12,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Python Unit Test" />
         <option value="Python Script" />
       </list>
     </option>
