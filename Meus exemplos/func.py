@@ -15,6 +15,15 @@ def toDecimal(num):
     res = soma
     return res
 
+def getBinaryNumber(msg=''):
+    while True:
+        try:
+            number = int(input(msg))
+            return number
+        except Exception as error:
+            print(error)
+
+
 def organiza(lista):
     cont = 0
     nova_lista = []
