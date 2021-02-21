@@ -26,6 +26,15 @@ def getBinaryNumber(msg=''):
         else:
             print('Insira um número!')
 
+def question(msg=''):
+    while True:
+        resp = str(input(msg)).lower()
+        if resp == 's':
+            return True
+        elif resp == 'n':
+            return False
+        else:
+            print('Tente novamente!')
 
 def organiza(lista):
     cont = 0
