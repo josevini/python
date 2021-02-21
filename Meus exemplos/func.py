@@ -17,11 +17,14 @@ def toDecimal(num):
 
 def getBinaryNumber(msg=''):
     while True:
-        try:
-            number = int(input(msg))
-            return number
-        except Exception as error:
-            print(error)
+        number = input(msg)
+        if number.isnumeric():
+            if isBinary(number):
+                return number
+            else:
+                print('Número inválido!')
+        else:
+            print('Insira um número!')
 
 
 def organiza(lista):
