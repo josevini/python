@@ -1,15 +1,12 @@
 from func import *
-sair = 'n'
 print('---' * 10)
 while True:
     num = getBinaryNumber('Digite um valor na base 2: ')
-    res = toDecimal(num)
-    print(f'Decimal: {int(res)}')
-    res = str(input('Quer sair? [S/N] ')).lower()
+    resp = toDecimal(num)
+    print(f'Decimal: {int(resp)}')
+    resp = question('Quer sair? [S/N] ')
     print('---' * 10)
-    if res == 's':
+    if resp:
         break
-    elif res == 'n':
-        continue
     else:
-        print('Opção inválida!')
+        continue
