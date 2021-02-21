@@ -36,6 +36,19 @@ def question(msg=''):
         else:
             print('Tente novamente!')
 
+def conversor():
+    print('---' * 10)
+    while True:
+        num = getBinaryNumber('Digite um valor na base 2: ')
+        resp = toDecimal(num)
+        print(f'Decimal: {int(resp)}')
+        resp = question('Quer sair? [S/N] ')
+        print('---' * 10)
+        if resp:
+            break
+        else:
+            continue
+
 def organiza(lista):
     cont = 0
     nova_lista = []
