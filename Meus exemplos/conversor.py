@@ -1,8 +1,8 @@
-from func import isBinary, toDecimal
+from func import *
 sair = 'n'
-print('=-=' * 10)
+
 while True:
-    num = str(input('Digite um valor na base 2: '))
+    num = getBinaryNumber('Digite um valor na base 2: ')
     if isBinary(num):
         res = toDecimal(num)
         print(f'Decimal: {int(res)}')
@@ -12,3 +12,7 @@ while True:
     print('=-=' * 10)
     if res == 's':
         break
+    elif res == 'n':
+        continue
+    else:
+        print('Opção inválida!')
